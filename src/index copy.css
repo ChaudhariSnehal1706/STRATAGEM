@@ -1,0 +1,462 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Chakra Petch", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(
+    45deg,
+    #050a28,
+    #090f2d,
+    #06092c,
+    #041250,
+    #040d3e
+  );
+  overflow-x: hidden;
+}
+.BulbImg {
+  max-width: 80% !important;
+  /* width: 1153.21px;
+  height: 828.8px; */
+}
+.Hero_Img {
+  /* width: 586.91px;
+  height: 549.7px; */
+  /* height: 50% !important; */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+/* Hero Section */
+.hero_section {
+  background: linear-gradient(45deg, #0d153a, #132349, #0c1439, #0c1439);
+  min-height: calc(100vh - 80px); /* Subtract the height of the image from 100vh */
+  background-attachment: fixed;
+  position: relative; /* Ensure positioning context for absolutely positioned elements */
+}
+
+.hero_section::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  /* bottom: 0; */
+  bottom: -40px;
+  width: 100%;
+  height: 80px;
+  background-image: url("./assets/images/HomeEnd.png");
+  background-size: contain; /* Adjust as needed */
+  background-repeat: no-repeat;
+  background-position: center; /* Center the background image */
+  border-radius: 20px;
+}
+
+
+/* Navbar */
+.navbar {
+  background: linear-gradient(45deg, #3b436e, #314067, #293059, #302d56);
+  backdrop-filter: blur(10px);
+  /* border-radius: 50px; */
+}
+/* menu-list */
+.menu-list {
+  background: linear-gradient(45deg, #3b436e, #314067, #293059, #302d56);
+  /* backdrop-filter: blur(10px); */
+  box-shadow: inset 0px 0px 12px 3px rgb(190 190 190 / 50%);
+  border-radius: 16px;
+  z-index: 2;
+}
+
+/* aboutUsPage */
+.aboutUsPage {
+  background: linear-gradient(
+    45deg,
+    #07143b,
+    #060d2f,
+    #050823,
+    #05182b,
+    #042a34
+  );
+  /* min-height: 100vh; */
+  /* background-attachment: fixed; */
+}
+
+/* ServicesPage */
+.ServicesPage {
+  background: linear-gradient(
+    45deg,
+    #050a28,
+    #090f2d,
+    #06092c,
+    #041250,
+    #040d3e
+  );
+  min-height: 100vh;
+  background-attachment: fixed;
+}
+
+/* ServicesCard */
+.ServicesCard {
+  background-image: url("./assets/images/Card.png");
+  /* background: red; */
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  /* box-shadow: inset 0px 0px 12px 3px rgb(190 190 190 / 50%); */
+  padding: 20px;
+  margin-bottom: 20px;
+  /* backdrop-filter: blur(10px); */
+  max-width: 630px;
+  /* max-height: 286px; */
+  height: 100%;
+  /* backdrop-filter: blur(100%); */
+  /* -webkit-backdrop-filter: blur(10px); */
+
+}
+.ServicesCard::after {
+  /* backdrop-filter: blur(20px); */
+  filter: blur(5px);
+}
+
+/*  */
+.StratagemPage {
+  background-image: url("./assets/images/Stratagem.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* width: "1440px";
+  height: "538px"; */
+  /* min-height: 100vh; */
+  /* background-attachment: fixed; */
+}
+
+/*  */
+.SourcingGuide {
+  background: linear-gradient(
+    45deg,
+    #050a28,
+    #090f2d,
+    #06092c,
+    #041250,
+    #040d3e
+  );
+  min-height: 100vh;
+}
+.SourcingGuideCard {
+  /* background-image: url("./assets/images/Card.png"); */
+  background: #e3e6f517;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* section */
+.section {
+  border: 1px solid #23253d;
+  border-radius: 16px;
+  padding: 16px;
+}
+
+/* ReadyToBeginCard */
+.ReadyToBeginCard {
+  background-image: url("./assets/images/BeginCard.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 30px;
+}
+
+/* TestimonialsCard */
+.TestimonialsCard {
+  /* background-image: url("./assets/images/Card.png"); */
+  background: #e3e6f517;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* ContactUsCard */
+.ContactUsCard {
+  background-image: linear-gradient(
+      90deg,
+      #af21c81f,
+      #c025e32b,
+      #21436a24,
+      #1864ba2e,
+      #0455b11f
+    ),
+    url("./assets/images/FlowerBG.png");
+  /* background: #e3e6f517; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* object-fit: cover; */
+  /* height: 100vh; */
+}
+
+/* contactForm.css */
+
+.form-input {
+  background-color: #1d497770;
+  color: rgb(255, 255, 255);
+  border: 1px solid #00e1ff62;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  width: 100%;
+}
+
+input::placeholder {
+  color: #ffffff;
+}
+textarea::placeholder {
+  color: #ffffff;
+}
+
+.form-textarea {
+  background-color: #1d497770;
+  color: #ffffff;
+  border: 1px solid #00e1ff62;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  width: 100%;
+  resize: none;
+}
+
+.active {
+  color: #10d4ff;
+}
+.active:hover {
+  color: #06667c;
+}
+
+/* OurApproach */
+.OurApproach {
+  background: linear-gradient(90deg, #130b44, #10233b, #10233bbb);
+  /* min-height: 100vh; */
+}
+
+/* OurValues */
+.OurValues {
+  background: linear-gradient(90deg, #072356, #050b29, #050722);
+  /* min-height: 100vh; */
+}
+
+/* teamCard */
+
+.teamCard {
+  background-color: #071833;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+/* profileCard */
+
+.profileCard {
+  background-color: #072e4e;
+  border-radius: 20px;
+  /* padding: 10px; */
+}
+
+/* ServicesPage */
+.servicesPage {
+  background: linear-gradient(
+    45deg,
+    #07143b,
+    #060d2f,
+    #050823,
+    #05182b,
+    #042a34
+  );
+  /* min-height: 100vh; */
+  background-attachment: fixed;
+}
+
+/* PersonalizedSupport */
+.PersonalizedSupport {
+  background-image: url("./assets/images/PersonalizedSupport.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* padding: 20px;  */
+}
+
+.PersonalizedSupportCard {
+  background: linear-gradient(90deg, #062a4e, #16353d);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+/* ContactUsPage */
+.ContactUsPage {
+  /* max-height: 100vh; */
+  /* background: red; */
+}
+
+/* ScrollBar */
+/* Track */
+::-webkit-scrollbar {
+  width: 5px; /* Width of the scrollbar */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #1ef0fb; /* Color of the scrollbar handle */
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #1e85fb; /* Darker color on hover */
+}
+
+ul li a {
+  cursor: pointer;
+}
+
+.slick-slide > div {
+  margin: 0 10px;
+}
+
+.slick-slider > button {
+  display: none !important;
+}
+
+.excellence-text {
+  position: relative;
+  z-index: 1; /* Ensure the text stays above the border */
+}
+
+.excellence-text::after {
+  content: "";
+  position: absolute;
+  /* top: 7%; */
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("./assets/images/HomeBackELE.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+  box-sizing: border-box;
+}
+
+/* @media (min-width: 768px) {
+  .home-end-image {
+    left: 53%;
+    top: 123%;
+  }
+}
+
+@media (min-width: 640px) {
+  .home-end-image {
+    left: 45%;
+    top: 112%;
+  }
+}
+
+@media (min-width: 320px) {
+  .home-end-image {
+    left: 40%;
+    top: 94%;
+  }
+} */
+
+.home-end-image {
+  bottom: 0;
+  /* top: 96%; */
+  left: 50%;
+  /* transform: translateX(-50%); */
+}
+
+.RedRing {
+  position: relative;
+  z-index: 1; /* Ensure the text stays above the border */
+}
+
+.RedRing::after {
+  content: "";
+  position: absolute;
+  right: 7%;
+  top: 47%;
+  width: 20%;
+  height: 100%;
+  background-image: url("./assets/images/RedRing.png");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+  box-sizing: border-box;
+  filter: blur(5px);
+  transform: translateY(-50%);
+}
+
+.PurpleRing {
+  position: relative;
+  z-index: 1;
+}
+
+.PurpleRing::after {
+  content: "";
+  position: absolute;
+  right: 16%;
+  top: 3%;
+  width: 100%;
+  height: 100%;
+  background-image: url("./assets/images/PurpleRing.png");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+  box-sizing: border-box;
+  /* filter: blur(5px); */
+  transform: translateY(-50%);
+}
+
+/* .PurpleCircle {
+  position: relative;
+  z-index: 1;
+}
+
+.PurpleCircle::after {
+  content: "";
+  position: absolute;
+  top: -57%;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("./assets/images/PurpleCircle.png");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+  box-sizing: border-box;
+} */
+
+/* NavBar */
+.navbar {
+  /* max-width: 1280px !important; */
+  height: 100px !important;
+  box-shadow: inset 0px 0px 12px 3px rgb(190 190 190 / 50%);
+}
+
+/* Footer */
+.footer {
+  /* background: linear-gradient(90deg, #072050, #040c3d); */
+  background: linear-gradient(to top right, #072050 20%, #040c3d 50%);
+}
+
+/* Call Now Btn */
+.call_now_btn{
+  background: linear-gradient(97.45deg, #08B5FF 5.67%, #63F3AE 97.05%);
+}
+.call_now_btn:hover{
+  background: linear-gradient(97.45deg, #63F3AE 5.67%, #08B5FF 97.05%);
+}

@@ -1,0 +1,16 @@
+export { default as NavBar } from './NavBar/navbar';
+export { default as AboutUsPage } from './aboutUs/AboutUsPage';
+export { default as AboutUsPage2 } from './aboutUs/AboutUsPage2';
+export { default as ServicesPage } from './Services/ServicesPage';
+export { default as ServicesPage2 } from './Services/ServicesPage2';
+export { default as Stratagem } from './Stratagem/Stratagem';
+export { default as SourcingGuide } from './SourcingGuide/SourcingGuide';
+export { default as SourcingGuide2 } from './SourcingGuide/SourcingGuide2';
+export { default as ReadyToBegin } from './ReadyToBegin/ReadyToBegin';
+export { default as Testimonials } from './Testimonials/Testimonials';
+export { default as ContactUs } from './ContactUs/ContactUs';
+export { default as Footer } from './Footer/Footer';
+export { default as OurApproach } from './OurApproach/OurApproach';
+export { default as OurValues } from './OurValues/OurValues';
+export { default as OurTeam } from './OurTeam/OurTeam';
+export { default as PersonalizedSupport } from './PersonalizedSupport/PersonalizedSupport';
